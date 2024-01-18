@@ -1,0 +1,91 @@
+section{
+     background-color:black;
+    background-image: url("../images/bg_1.jpg.webp");
+    height: 100vh    ;
+    min-height: 750px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index:0;
+
+}
+.textbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    margin-top: 200px;
+}
+
+.textbox h1{
+    font: 50px "Nunito sans",Arial,sans-serif ;
+    font-weight: 1000;
+    inline-size: 1.5;
+
+}
+
+.textbox p{
+    font: 20px "Nunito sans",Arial,sans-serif ;
+    margin-top: 20px;
+    font-weight: 500;
+
+}
+
+.overall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: white;
+    gap:40px;
+}
+.icon {
+    padding-right:15px;
+    width:200px;
+    height:20px;
+    border-radius:0px 0px 0px 0px ;
+    color: white;
+    border:1px solid gray;
+    outline: none;
+    padding:10px 15px 10px;
+   
+    background: url("https://www.shutterstock.com/image-vector/magnifying-glass-search-icon-flat-260nw-738763579.jpg") no-repeat right;
+    background-size: 20px;
+  }
+  .location {
+    padding-right:15px;
+    background: url(" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaPA4arew7WdPWAcyNrL7K_DwkLF0kpRcfvChnAA7zdQSGQV55WKjWd-ay3g&s") no-repeat right;
+    background-size: 20px;
+    width:200px;
+    height:20px;
+    border:1px solid gray;
+    outline: none;
+    margin-left:10px;
+    font-size: 15px;
+   padding:10px 15px 10px;
+  }
+  .locatio {
+    padding-right:15px;
+    background: url("data:image/png;base64,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")no-repeat right;
+    background-size: 20px;
+    width:200px;
+    height:20px;
+    border:1px solid gray;
+    outline: none;
+    margin-left:10px;
+    color:white;
+    font-size: 15px;
+   padding:10px 15px 10px;
+  }
+.btns{
+  padding:5px 15px 5px;
+  font-size: 14px;
+  background-color: #ff414d;
+  border-radius:5px;
+  border: none;
+  outline: none;
+  color: white;
+}
