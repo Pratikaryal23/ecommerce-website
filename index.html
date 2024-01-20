@@ -10,8 +10,8 @@
     <script src="https://kit.fontawesome.com/9a708f8442.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section>
         <div class="container">
+            <section>
             <div class="sub-container">
             <div class="main">
             <div class="tele">
@@ -19,7 +19,7 @@
                 <span> +1 234 456 78910</span>
             </div>
             <div class="all">
-                <ul>
+                <ul class="oppp">
                     <li>Facebook</li>
                     <li>Twitter</li>
                     <li>Dribble</li>
@@ -29,14 +29,20 @@
             </div>
             <navbar>
                 <div class="wrap">
+
+                    <!-- <input type="checkbox" id="check">
+                    <label for="check"  class="checkbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label> -->
                     <div class="logo">COMMERCE <span class="oo">HUB</span></div>
                     <div class="over">
+                   
                         <ul>
-                            <li>HOME</li>
-                            <li>ABOUT</li>
-                            <li>LISTNING</li>
-                            <li>BLOG</li>
-                            <li>CONTACT</li>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="./HTML/about.html">About</a></li>
+                            <li><a href="index.html">Listing</a></li>
+                            <li><a href="index.html">Blog</a></li>
+                            <li><a href="index.html">Contact</a></li>
                         </ul>
                         <button class="btn"><i class="fa-light fa-plus">Add Listing</i>
                         </button>
@@ -51,9 +57,16 @@
                 </div>
                 <div class="overall">
                     <div class="search">
-                        <input type="text" class="icon" value placeholder="Wher are you to">
-                        <input type="text" class="location" value placeholder="All Location">
-                          <input type="text" class="locatio" value placeholder="Categories">
+                        <input type="text" class="icon" id="locatio" value placeholder="Wher are you to">
+                        <input type="text" class="location" id="locatio" value placeholder="All Location">
+                          <select id="locatio"> 
+                        <option class="poiu">all category</option>
+                            <option>Food</option>
+                            <option>Drinks</option>
+                            <option>Rest</option>
+                            <option>Exercise</option>
+                            <option>Beers</option>
+                             </select>
                           <button class="btns">Search</i>
                         
                   
@@ -61,8 +74,9 @@
 
                     </div>
                 </div>
+            </section>
         </div>
-    </section>
+  
 
     <!-- <div class="cocacola">
         <h1>hello</h1>
