@@ -75,9 +75,37 @@ ul li a{
     color:#999999; ;
 }
 .wrap{
+    position: relative;
     display: flex;
     justify-content:space-evenly;
     margin-top:3%;
+ }
+.win{
+    display: none;
+}
+ .sidebar{
+    position: absolute;
+    /* display: none; */
+    top: 30px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+    background-color:rgb(98, 88, 88);
+    transform: translateY(-200%);
+    transition: all .4s ease-in-out;
+ }
+ .sidebar .open{
+    display: grid;
+    margin: 20px;
+    gap:20px;
+    
+ }
+ .sidebar .open li a{
+    color:white;
+    font:15px "Nunito sans",Arial,sans-serif
+ }
+ .sidebar .open li a:hover{
+    color: #ff414d;
  }
 
 .logo{
@@ -94,6 +122,11 @@ ul li a{
     display: flex;
    
  
+}
+
+.win{
+    color:white;
+    
 }
  .wrap ul li{
     color:#999999;
@@ -168,4 +201,10 @@ section::after{
     margin-top: -1%;
     color: white;
 }
+}
+
+@media(max-width:480px){
+    .win{
+        display: block;
+    }
 }
